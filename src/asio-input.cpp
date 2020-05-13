@@ -37,7 +37,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <QLabel>
 
 OBS_DECLARE_MODULE()
-OBS_MODULE_USE_DEFAULT_LOCALE("win-asio", "en-US")
+OBS_MODULE_USE_DEFAULT_LOCALE("obs-asio", "en-US")
 
 #define blog(level, msg, ...) blog(level, "asio-input: " msg, ##__VA_ARGS__)
 

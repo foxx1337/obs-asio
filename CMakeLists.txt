@@ -66,7 +66,7 @@ include_directories(
 )
 
 set(obs-asio_QRC
-	asio-input.qrc)
+	src/asio-input.qrc)
 	
 set(obs-asio_SOURCES
 	src/asio-input.cpp
@@ -74,16 +74,16 @@ set(obs-asio_SOURCES
 
 set(JUCE_LIB optimized ${JUCE_LIBRARY} debug ${JUCE_LIBRARY_DEBUG})
 
-qt5_add_resources(obs-asio_QRC_SOURCES ${win-asio_QRC})
+qt5_add_resources(obs-asio_QRC_SOURCES ${obs-asio_QRC})
 
 add_library(obs-asio MODULE
-	${win-asio_SOURCES}
-	${win-asio_QRC_SOURCES}
+	${obs-asio_SOURCES}
+	${obs-asio_QRC_SOURCES}
 )
 
 target_link_libraries(obs-asio
 	libobs
-	obs-frontend-api
+	${OBS_FRONTEND_LIB}
 	${JUCE_LIB}
 	Qt5::Core
 	Qt5::Widgets
