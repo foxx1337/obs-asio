@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{12E3CE6B-7E2E-35A1-967E-C3821F339E9D}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>obs-asio</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\src\OBS\obs-asio\build32-asiobass\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">obs-asio.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">obs-asio</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\src\OBS\obs-asio\build32-asiobass\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">obs-asio.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">obs-asio</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\src\OBS\obs-asio\build32-asiobass\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">obs-asio.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">obs-asio</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\src\OBS\obs-asio\build32-asiobass\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">obs-asio.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">obs-asio</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\src\OBS\bassasio\v14\c;D:\src\OBS\obs-studio\libobs;D:\src\OBS\obs-studio\build32\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;HAVE_OBSCONFIG_H;CMAKE_INTDIR="Debug";obs_asio_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;HAVE_OBSCONFIG_H;CMAKE_INTDIR=\"Debug\";obs_asio_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\src\OBS\bassasio\v14\c;D:\src\OBS\obs-studio\libobs;D:\src\OBS\obs-studio\build32\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\src\OBS\bassasio\v14\c;D:\src\OBS\obs-studio\libobs;D:\src\OBS\obs-studio\build32\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+if 0==1 ( "C:/Program Files/CMake/bin/cmake.exe" -E make_directory D:/src/OBS/obs-asio/release/data/obs-plugins/obs-asio D:/src/OBS/obs-asio/release/obs-plugins/32bit )
+if %errorlevel% neq 0 goto :cmEnd
+if 0==1 ( "C:/Program Files/CMake/bin/cmake.exe" -E copy_directory D:/src/OBS/obs-asio/src/data D:/src/OBS/obs-asio/release/data/obs-plugins/obs-asio )
+if %errorlevel% neq 0 goto :cmEnd
+if 0==1 ( "C:/Program Files/CMake/bin/cmake.exe" -E copy D:/src/OBS/obs-asio/build32-asiobass/Debug/obs-asio.dll D:/src/OBS/obs-asio/release/obs-plugins/32bit )
+if %errorlevel% neq 0 goto :cmEnd
+if 1==1 ( "C:/Program Files/CMake/bin/cmake.exe" -E copy D:/src/OBS/obs-asio/build32-asiobass/Debug/obs-asio.dll D:/src/OBS/obs-studio/libobs/../build32/rundir/Debug/obs-plugins/32bit )
+if %errorlevel% neq 0 goto :cmEnd
+if 1==1 ( "C:/Program Files/CMake/bin/cmake.exe" -E make_directory D:/src/OBS/obs-studio/libobs/../build32/rundir/Debug/data/obs-plugins/obs-asio )
+if %errorlevel% neq 0 goto :cmEnd
+if 1==1 ( "C:/Program Files/CMake/bin/cmake.exe" -E copy_directory D:/src/OBS/obs-asio/data D:/src/OBS/obs-studio/libobs/../build32/rundir/Debug/data/obs-plugins/obs-asio )
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\src\OBS\obs-studio\build32\libobs\Debug\obs.lib;D:\src\OBS\bassasio\v14\c\bassasio.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/src/OBS/obs-asio/build32-asiobass/Debug/obs-asio.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/src/OBS/obs-asio/build32-asiobass/Debug/obs-asio.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\src\OBS\bassasio\v14\c;D:\src\OBS\obs-studio\libobs;D:\src\OBS\obs-studio\build32\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_OBSCONFIG_H;CMAKE_INTDIR="Release";obs_asio_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_OBSCONFIG_H;CMAKE_INTDIR=\"Release\";obs_asio_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\src\OBS\bassasio\v14\c;D:\src\OBS\obs-studio\libobs;D:\src\OBS\obs-studio\build32\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\src\OBS\bassasio\v14\c;D:\src\OBS\obs-studio\libobs;D:\src\OBS\obs-studio\build32\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+if 1==1 ( "C:/Program Files/CMake/bin/cmake.exe" -E make_directory D:/src/OBS/obs-asio/release/data/obs-plugins/obs-asio D:/src/OBS/obs-asio/release/obs-plugins/32bit )
+if %errorlevel% neq 0 goto :cmEnd
+if 1==1 ( "C:/Program Files/CMake/bin/cmake.exe" -E copy_directory D:/src/OBS/obs-asio/src/data D:/src/OBS/obs-asio/release/data/obs-plugins/obs-asio )
+if %errorlevel% neq 0 goto :cmEnd
+if 1==1 ( "C:/Program Files/CMake/bin/cmake.exe" -E copy D:/src/OBS/obs-asio/build32-asiobass/Release/obs-asio.dll D:/src/OBS/obs-asio/release/obs-plugins/32bit )
+if %errorlevel% neq 0 goto :cmEnd
+if 0==1 ( "C:/Program Files/CMake/bin/cmake.exe" -E copy D:/src/OBS/obs-asio/build32-asiobass/Release/obs-asio.dll D:/src/OBS/obs-studio/libobs/../build32/rundir/Release/obs-plugins/32bit )
+if %errorlevel% neq 0 goto :cmEnd
+if 0==1 ( "C:/Program Files/CMake/bin/cmake.exe" -E make_directory D:/src/OBS/obs-studio/libobs/../build32/rundir/Release/data/obs-plugins/obs-asio )
+if %errorlevel% neq 0 goto :cmEnd
+if 0==1 ( "C:/Program Files/CMake/bin/cmake.exe" -E copy_directory D:/src/OBS/obs-asio/data D:/src/OBS/obs-studio/libobs/../build32/rundir/Release/data/obs-plugins/obs-asio )
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\src\OBS\obs-studio\build32\libobs\Release\obs.lib;D:\src\OBS\bassasio\v14\c\bassasio.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/src/OBS/obs-asio/build32-asiobass/Release/obs-asio.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/src/OBS/obs-asio/build32-asiobass/Release/obs-asio.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\src\OBS\bassasio\v14\c;D:\src\OBS\obs-studio\libobs;D:\src\OBS\obs-studio\build32\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_OBSCONFIG_H;CMAKE_INTDIR="MinSizeRel";obs_asio_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_OBSCONFIG_H;CMAKE_INTDIR=\"MinSizeRel\";obs_asio_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\src\OBS\bassasio\v14\c;D:\src\OBS\obs-studio\libobs;D:\src\OBS\obs-studio\build32\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\src\OBS\bassasio\v14\c;D:\src\OBS\obs-studio\libobs;D:\src\OBS\obs-studio\build32\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+if 0==1 ( "C:/Program Files/CMake/bin/cmake.exe" -E make_directory D:/src/OBS/obs-asio/release/data/obs-plugins/obs-asio D:/src/OBS/obs-asio/release/obs-plugins/32bit )
+if %errorlevel% neq 0 goto :cmEnd
+if 0==1 ( "C:/Program Files/CMake/bin/cmake.exe" -E copy_directory D:/src/OBS/obs-asio/src/data D:/src/OBS/obs-asio/release/data/obs-plugins/obs-asio )
+if %errorlevel% neq 0 goto :cmEnd
+if 0==1 ( "C:/Program Files/CMake/bin/cmake.exe" -E copy D:/src/OBS/obs-asio/build32-asiobass/MinSizeRel/obs-asio.dll D:/src/OBS/obs-asio/release/obs-plugins/32bit )
+if %errorlevel% neq 0 goto :cmEnd
+if 0==1 ( "C:/Program Files/CMake/bin/cmake.exe" -E copy D:/src/OBS/obs-asio/build32-asiobass/MinSizeRel/obs-asio.dll D:/src/OBS/obs-studio/libobs/../build32/rundir/MinSizeRel/obs-plugins/32bit )
+if %errorlevel% neq 0 goto :cmEnd
+if 0==1 ( "C:/Program Files/CMake/bin/cmake.exe" -E make_directory D:/src/OBS/obs-studio/libobs/../build32/rundir/MinSizeRel/data/obs-plugins/obs-asio )
+if %errorlevel% neq 0 goto :cmEnd
+if 0==1 ( "C:/Program Files/CMake/bin/cmake.exe" -E copy_directory D:/src/OBS/obs-asio/data D:/src/OBS/obs-studio/libobs/../build32/rundir/MinSizeRel/data/obs-plugins/obs-asio )
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\src\OBS\obs-studio\build32\libobs\MinSizeRel\obs.lib;D:\src\OBS\bassasio\v14\c\bassasio.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/src/OBS/obs-asio/build32-asiobass/MinSizeRel/obs-asio.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/src/OBS/obs-asio/build32-asiobass/MinSizeRel/obs-asio.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\src\OBS\bassasio\v14\c;D:\src\OBS\obs-studio\libobs;D:\src\OBS\obs-studio\build32\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_OBSCONFIG_H;CMAKE_INTDIR="RelWithDebInfo";obs_asio_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_OBSCONFIG_H;CMAKE_INTDIR=\"RelWithDebInfo\";obs_asio_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\src\OBS\bassasio\v14\c;D:\src\OBS\obs-studio\libobs;D:\src\OBS\obs-studio\build32\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\src\OBS\bassasio\v14\c;D:\src\OBS\obs-studio\libobs;D:\src\OBS\obs-studio\build32\config;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+if 0==1 ( "C:/Program Files/CMake/bin/cmake.exe" -E make_directory D:/src/OBS/obs-asio/release/data/obs-plugins/obs-asio D:/src/OBS/obs-asio/release/obs-plugins/32bit )
+if %errorlevel% neq 0 goto :cmEnd
+if 0==1 ( "C:/Program Files/CMake/bin/cmake.exe" -E copy_directory D:/src/OBS/obs-asio/src/data D:/src/OBS/obs-asio/release/data/obs-plugins/obs-asio )
+if %errorlevel% neq 0 goto :cmEnd
+if 0==1 ( "C:/Program Files/CMake/bin/cmake.exe" -E copy D:/src/OBS/obs-asio/build32-asiobass/RelWithDebInfo/obs-asio.dll D:/src/OBS/obs-asio/release/obs-plugins/32bit )
+if %errorlevel% neq 0 goto :cmEnd
+if 0==1 ( "C:/Program Files/CMake/bin/cmake.exe" -E copy D:/src/OBS/obs-asio/build32-asiobass/RelWithDebInfo/obs-asio.dll D:/src/OBS/obs-studio/libobs/../build32/rundir/RelWithDebInfo/obs-plugins/32bit )
+if %errorlevel% neq 0 goto :cmEnd
+if 0==1 ( "C:/Program Files/CMake/bin/cmake.exe" -E make_directory D:/src/OBS/obs-studio/libobs/../build32/rundir/RelWithDebInfo/data/obs-plugins/obs-asio )
+if %errorlevel% neq 0 goto :cmEnd
+if 0==1 ( "C:/Program Files/CMake/bin/cmake.exe" -E copy_directory D:/src/OBS/obs-asio/data D:/src/OBS/obs-studio/libobs/../build32/rundir/RelWithDebInfo/data/obs-plugins/obs-asio )
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\src\OBS\obs-studio\build32\libobs\RelWithDebInfo\obs.lib;D:\src\OBS\bassasio\v14\c\bassasio.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/src/OBS/obs-asio/build32-asiobass/RelWithDebInfo/obs-asio.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/src/OBS/obs-asio/build32-asiobass/RelWithDebInfo/obs-asio.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\src\OBS\obs-asio\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/src/OBS/obs-asio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/src/OBS/obs-asio -BD:/src/OBS/obs-asio/build32-asiobass --check-stamp-file D:/src/OBS/obs-asio/build32-asiobass/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;D:\src\OBS\obs-asio\build32-asiobass\CMakeFiles\3.16.0-rc4\CMakeCCompiler.cmake;D:\src\OBS\obs-asio\build32-asiobass\CMakeFiles\3.16.0-rc4\CMakeCXXCompiler.cmake;D:\src\OBS\obs-asio\build32-asiobass\CMakeFiles\3.16.0-rc4\CMakeRCCompiler.cmake;D:\src\OBS\obs-asio\build32-asiobass\CMakeFiles\3.16.0-rc4\CMakeSystem.cmake;D:\src\OBS\obs-asio\external\FindLibobs.cmake;D:\src\OBS\obs-studio\build32\libobs\LibObsConfig.cmake;D:\src\OBS\obs-studio\build32\libobs\LibObsConfigVersion.cmake;D:\src\OBS\obs-studio\build32\libobs\LibObsTarget.cmake;D:\src\OBS\obs-studio\cmake\external\ObsPluginHelpers.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\src\OBS\obs-asio\build32-asiobass\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/src/OBS/obs-asio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/src/OBS/obs-asio -BD:/src/OBS/obs-asio/build32-asiobass --check-stamp-file D:/src/OBS/obs-asio/build32-asiobass/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;D:\src\OBS\obs-asio\build32-asiobass\CMakeFiles\3.16.0-rc4\CMakeCCompiler.cmake;D:\src\OBS\obs-asio\build32-asiobass\CMakeFiles\3.16.0-rc4\CMakeCXXCompiler.cmake;D:\src\OBS\obs-asio\build32-asiobass\CMakeFiles\3.16.0-rc4\CMakeRCCompiler.cmake;D:\src\OBS\obs-asio\build32-asiobass\CMakeFiles\3.16.0-rc4\CMakeSystem.cmake;D:\src\OBS\obs-asio\external\FindLibobs.cmake;D:\src\OBS\obs-studio\build32\libobs\LibObsConfig.cmake;D:\src\OBS\obs-studio\build32\libobs\LibObsConfigVersion.cmake;D:\src\OBS\obs-studio\build32\libobs\LibObsTarget.cmake;D:\src\OBS\obs-studio\cmake\external\ObsPluginHelpers.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\src\OBS\obs-asio\build32-asiobass\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/src/OBS/obs-asio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/src/OBS/obs-asio -BD:/src/OBS/obs-asio/build32-asiobass --check-stamp-file D:/src/OBS/obs-asio/build32-asiobass/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;D:\src\OBS\obs-asio\build32-asiobass\CMakeFiles\3.16.0-rc4\CMakeCCompiler.cmake;D:\src\OBS\obs-asio\build32-asiobass\CMakeFiles\3.16.0-rc4\CMakeCXXCompiler.cmake;D:\src\OBS\obs-asio\build32-asiobass\CMakeFiles\3.16.0-rc4\CMakeRCCompiler.cmake;D:\src\OBS\obs-asio\build32-asiobass\CMakeFiles\3.16.0-rc4\CMakeSystem.cmake;D:\src\OBS\obs-asio\external\FindLibobs.cmake;D:\src\OBS\obs-studio\build32\libobs\LibObsConfig.cmake;D:\src\OBS\obs-studio\build32\libobs\LibObsConfigVersion.cmake;D:\src\OBS\obs-studio\build32\libobs\LibObsTarget.cmake;D:\src\OBS\obs-studio\cmake\external\ObsPluginHelpers.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\src\OBS\obs-asio\build32-asiobass\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/src/OBS/obs-asio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/src/OBS/obs-asio -BD:/src/OBS/obs-asio/build32-asiobass --check-stamp-file D:/src/OBS/obs-asio/build32-asiobass/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;D:\src\OBS\obs-asio\build32-asiobass\CMakeFiles\3.16.0-rc4\CMakeCCompiler.cmake;D:\src\OBS\obs-asio\build32-asiobass\CMakeFiles\3.16.0-rc4\CMakeCXXCompiler.cmake;D:\src\OBS\obs-asio\build32-asiobass\CMakeFiles\3.16.0-rc4\CMakeRCCompiler.cmake;D:\src\OBS\obs-asio\build32-asiobass\CMakeFiles\3.16.0-rc4\CMakeSystem.cmake;D:\src\OBS\obs-asio\external\FindLibobs.cmake;D:\src\OBS\obs-studio\build32\libobs\LibObsConfig.cmake;D:\src\OBS\obs-studio\build32\libobs\LibObsConfigVersion.cmake;D:\src\OBS\obs-studio\build32\libobs\LibObsTarget.cmake;D:\src\OBS\obs-studio\cmake\external\ObsPluginHelpers.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\src\OBS\obs-asio\build32-asiobass\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\src\OBS\obs-asio\src\asio-input.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\src\OBS\obs-asio\build32-asiobass\ZERO_CHECK.vcxproj">
+      <Project>{97B428B2-43BA-3C8C-AB16-DC6538A058DD}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

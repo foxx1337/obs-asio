@@ -1,0 +1,3 @@
+D:/src/OBS/obs-asio/build32-asiobass/CMakeFiles/obs-asio.dir
+D:/src/OBS/obs-asio/build32-asiobass/CMakeFiles/ALL_BUILD.dir
+D:/src/OBS/obs-asio/build32-asiobass/CMakeFiles/ZERO_CHECK.dir
